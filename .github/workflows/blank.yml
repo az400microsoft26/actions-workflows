@@ -30,4 +30,6 @@ jobs:
           dst_path: /.github/workflows/
           dst_owner: actions-workflows
           dst_repo_name: greeter-app
+          src_branch: trunk
+          dst_branch: trunk
 
