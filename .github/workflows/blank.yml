@@ -28,7 +28,7 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           src_path: /workflow-templates/${{ github.event.inputs.filename }}
           dst_path: /.github/workflows/
-          dst_owner: actions-workflows
+          dst_owner: actionsdemos
           dst_repo_name: greeter-app
           src_branch: trunk
           dst_branch: trunk
