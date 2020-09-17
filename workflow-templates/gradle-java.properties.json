@@ -1,0 +1,8 @@
+{
+    "name": "Gradle Java",
+    "description": "Gradle build template for Java projects.",
+    "iconName": "gradle-icon",
+    "categories": [
+        "Java"
+    ]
+}
