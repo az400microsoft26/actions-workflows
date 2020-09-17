@@ -25,7 +25,7 @@ jobs:
       - name: Copycat Action
         uses: andstor/copycat-action@v3.2.3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           src_path: /workflow-templates/${{ github.event.inputs.filename }}
           dst_path: /.github/workflows/
           dst_owner: actions-workflows
