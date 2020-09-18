@@ -1,14 +1,15 @@
 name: Publish Release Candidate to GitHub Package Registry
 
 on:
-  inputs:
-    version:
-      description: 'Package version'
-      required: true
-    description:
-      description: 'Description of the release candidate version'
-      required: false
-      default: 'Latest release candidate version'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Package version'
+        required: true
+      description:
+        description: 'Description of the release candidate version'
+        required: false
+        default: 'Latest release candidate version'
 jobs:
   release:
     runs-on: ubuntu-latest
