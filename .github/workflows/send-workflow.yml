@@ -7,6 +7,9 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
+      repo:
+        description: 'The destination repo'
+        required: true
       filename:
         description: 'The filename to copy'
         required: true
@@ -29,7 +32,7 @@ jobs:
           src_path: /workflow-templates/${{ github.event.inputs.filename }}
           dst_path: /.github/workflows/
           dst_owner: actionsdemo
-          dst_repo_name: greeter-app
+          dst_repo_name: ${{ github.event.inputs.repo }}
           src_branch: trunk
           dst_branch: trunk
 
