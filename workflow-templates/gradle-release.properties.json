@@ -1,8 +1,0 @@
-{
-    "name": "Release Java Package to GPR",
-    "description": "Gradle release template for publishing Java project releases to GitHub Package Registry.",
-    "iconName": "gradle-icon",
-    "categories": [
-        "Java"
-    ]
-}
