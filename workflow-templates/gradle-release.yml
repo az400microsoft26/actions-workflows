@@ -1,20 +1,21 @@
 name: Publish Release Candidate to GitHub Package Registry
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Package version'
-        required: true
-      description:
-        description: 'Description of the release candidate version'
-        required: false
-        default: 'Release candidate version'
+  inputs:
+    version:
+      description: 'Package version'
+      required: true
+    description:
+      description: 'Description of the release candidate version'
+      required: false
+      default: 'Latest release candidate version'
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: '${{ github.event.inputs.version }}'
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
