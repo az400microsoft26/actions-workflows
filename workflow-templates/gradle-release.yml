@@ -1,4 +1,4 @@
-name: Publish Release to GitHub Package Registry
+name: Publish Release Candidate to GitHub Package Registry
 
 on:
   workflow_dispatch:
