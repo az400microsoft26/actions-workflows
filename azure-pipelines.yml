@@ -7,7 +7,10 @@ trigger:
 - trunk
 
 pool:
-  vmImage: ubuntu-latest
+    vmImage: vs2017-win2016
+    name: az400newpool
+    demands:
+    - agent.name -equals az400newagent
 
 steps:
 - task: NodeTool@0
